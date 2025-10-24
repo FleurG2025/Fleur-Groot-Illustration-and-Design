@@ -1,0 +1,45 @@
+html, body {
+    background-color: var(--main-blue);
+    padding: 0;
+    height: 100%; 
+}
+
+.hero {
+  background-image: url('../Images_Main/Mobile_Landing_Page.gif');
+  background-repeat: no-repeat; 
+  background-size: 100% auto;
+  background-position: 0 35px;
+  max-width: 450px; 
+  height: auto;
+  position: relative;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-button {
+    border-top: 1px var(--color-white) solid;
+    border-left: 1px var(--color-white) solid;
+    border-bottom: 1px var(--color-white) solid;
+    border-right: none;
+  }
+
+/* ----------------------------------- tablet – min-width 500px --------------------------------------- */
+@media (min-width: 500px) {
+  .hero {
+    background-position: 0 0;
+    max-width: 700px;
+  }
+
+}
+
+/* --------------------------------- desktop – min-width 950px ----------------------------------------- */
+@media (min-width: 950px) {
+ 
+.hero {
+  background-image: url('../Images_Main/Landing_page_desktop.gif');
+  max-width: 1350px;
+}
+}

@@ -1,0 +1,38 @@
+.cvWrapper {
+    display: grid;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+.cvWrapper.zoomed {
+    overflow: auto;
+    cursor: move;
+  }
+  
+.zoomableCV {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: top left;
+    cursor: zoom-in;
+    display: block;
+  }
+  
+.cvWrapper.zoomed .zoomableCV {
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+  
+/* ----------------------------------------- Desktop min-width 950px ----------------------------------------- */
+  
+  @media (min-width: 950px) {
+    .zoom-wrapper.zoomed {
+      margin-top: 6rem;
+      margin-left: 2rem;
+    }
+    .cvWrapper.zoomed .zoomableCV {
+        transform: scale(1.5);
+      }
+  }
+  

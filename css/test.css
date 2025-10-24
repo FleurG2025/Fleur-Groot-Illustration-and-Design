@@ -1,0 +1,17 @@
+.header {
+    display: inline-block;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .75rem;
+}
+.img1 {
+    width: auto;
+    height: 45px;
+    object-fit: contain;
+    grid-column: span 2;
+}
+.img2 {
+    width: auto;
+    height: 30px;
+    object-fit: contain;
+    grid-column: span 10;
+}

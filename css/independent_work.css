@@ -1,0 +1,57 @@
+/* ------------------------------ Mobile-first (default) --------------------------------- */
+.one, .two, .four, .five, .seven, .eight, .nine, .ten {
+    grid-column: span 1;
+}
+.imageGrid {
+    display: grid;
+    gap: var(--gap-sml);
+    grid-column: span 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .imageGrid img {
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+  }
+/* -------------------------------- min-width 500px ------------------------------------------ */
+@media (min-width: 500px) {
+    .one, .two, .three, .four, .six, .seven, .eight,
+    .eleven, .twelve, .thirteen {
+        grid-column: span 4;
+    }
+    .four {
+        grid-column: span 5;
+    }
+    .nine, .ten, .fourteen, .fifteen {
+        grid-column: span 6;
+    }
+    .five {
+        grid-column: span 7;
+    }
+
+    .seven {
+        align-self: center;
+    }
+    .imageGrid {
+        grid-column: span 8;
+        grid-template-columns: repeat(8, 1fr);
+      }
+    
+      .imageGrid img {
+        grid-column: span 4;
+      }
+}
+/* -------------------------------- min-width 950px ------------------------------------------ */
+@media (min-width:950px) {
+    .imageGrid {
+        grid-column: span 4;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .imageGrid img {
+    grid-column: span 4;
+    width: 100%;
+    height: auto;
+    }
+}

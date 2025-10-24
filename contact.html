@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    
+    <input type="checkbox" id="nav-checkbox">
+    <label for="nav-checkbox" class="nav-button nav-button--menu" role="button" style="z-index: 3;">
+        <span class="long-dash"></span>menu<span class="long-dash"></span>
+    </label>
+    <label for="nav-checkbox" class="overlay"></label>
+    
+    <nav>
+        <label for="nav-checkbox" class="close-button">
+            <span class="nav-icon-text">
+            <img class="icon" src="icons/svg/close_cross_white.svg" alt="close"></span>
+        </label>
+        <ul>
+            <li><a href="landing_page.html"><span class="nav-icon-text">
+                <img class="icon" src="icons/svg/horizontal_line_bottom_blue.svg">home</span></a>
+            </li>
+            <li><a href="about.html"><span class="nav-icon-text">
+                <img class="icon" src="icons/svg/horizontal_line_top_blue.svg">about</span></a>
+            </li>
+            <li><a href="print | digital.html"><span class="nav-icon-text">
+                <img class="icon" src="icons/svg/diagonal_line_left_blue.svg">print | digital</span></a>
+            </li>
+            <li><span class="nav-icon-text">
+                <img class="icon" src="icons/svg/vertical_line_left_blue.svg">ux/ui</span>
+            </li>
+            <li><a href="illustrations_in_videos.html"><span class="nav-icon-text">
+                    <img class="icon" src="icons/svg/diagonal_line_right_blue.svg">illustrations in videos</span></a>
+            </li>
+            <li><a href="cards+prints.html"><span class="nav-icon-text">
+                <img class="icon" src="icons/svg/diagonal_line_left_blue.svg">cards + prints</span></a>
+            </li>
+            <li><a href="independent_work.html"><span class="nav-icon-text">
+                    <img class="icon" src="icons/svg/vertical_line_middle_blue.svg">independent work</span></a>
+            </li>
+            <li><span class="nav-icon-text">
+                <img class="icon" src="icons/svg/horizontal_line_top_blue.svg"><a href="https://www.instagram.com/fleur_groot_illustration/" target="_blank">instagram</a></span>
+            </li>
+            <li><a href="contact.html"><span class="nav-icon-text">
+                <img class="icon" src="icons/svg/horizontal_line_bottom_blue.svg">contact</span></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="content">
+            <div class="formWrapper">
+                <form id="contact" action="https://formspree.io/f/xvgbyrqy" method="POST">
+                    <div class="sticker">contact</div>
+                    <label for="full-name">From :</label>
+                    <input type="text" name="full-name" id="full-name" placeholder="Type full name here">
+
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="Type email here">
+            
+                    <label for="message">Message :</label>
+                    <textarea name="message" id="message" placeholder="Type message here..."></textarea>
+
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <input type="hidden" name="_redirect" value="https://fleurgroot.com/thanks.html">
+
+                <div class="formButtons">
+                    <button type="button" onclick="history.back()">cancel</button>
+                    <button type="submit">send message</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js">
+    </script>
+</body>
+</html>

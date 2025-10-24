@@ -1,0 +1,179 @@
+html, body {
+    background-color: var(--main-blue);
+    padding: 0;
+    height: 100%; 
+}
+
+.hero {
+  background-image: url('../Images_Main/Contact_me_portrait.gif');
+  background-position: 0 40px;
+  background-size: 100% auto;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  grid-column: 1 / -1;
+}
+
+form {
+  position: relative;
+  border-radius: 1rem;
+  padding: 25px;  
+  background-color: #feb9af;
+  width: min(70vw, 550px);
+  margin: auto;
+  box-shadow:.4rem .4rem 0 var(--main-black);
+}
+form > label {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: block;
+  margin: 20px 5px 5px 0;
+}
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+button[type="button"],
+button[type="submit"] {
+  font-weight: 700;
+  padding: 6px 11px 6px 11px;
+  border-radius: 1rem;
+}
+button[type="button"] {
+  border: 1.5px solid #c74151;
+  color: #c74151;
+  background-color: var(--color-white);
+}
+
+/* cancel button */
+button[type="button"]:hover {
+  font-style: italic;
+  box-shadow:
+  .19rem .19rem 0 var(--color-white),
+  .35rem .35rem 0 #c74151;
+}
+
+button[type="submit"] {
+  border: 1.5px solid var(--main-blue);
+  color: var(--color-white);
+  background-color: var(--main-blue);
+}
+
+button[type="submit"]:hover {
+  font-style: italic;
+  color: var(--color-white);
+  background-color: var(--main-blue) ;
+  box-shadow:
+  .19rem .19rem 0 var(--color-white),
+  .35rem .35rem 0 var(--main-blue);
+}
+
+input, textarea, select {
+  font-family: var(--font-main);
+  font-style: italic;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing);
+  color: var(--main-blue);
+}
+
+input[type="text"],
+input[type="email"],
+textarea, select {
+  display: block;
+  width: 95%;
+  font-size: 1rem;
+  background: #feb9af;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1.5px solid var(--main-black);
+  border-left: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background-color: var(--color-white);
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid var(--main-blue);
+  border-left: none; 
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+select {
+  width: auto;
+}
+textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #c74151;
+
+}
+
+.sticker {
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  transform: translate(-45%, -45%) rotate(-20deg);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff78ab;
+  box-shadow:.07rem .12rem 0 var(--main-black);
+}
+.sticker:hover {
+  background-color: #ff78ab;
+  transform: translate(-45%, -45%) rotate(0deg);
+  color: var(--color-white)
+}
+
+.nav-button--menu {
+  border-top: 1px var(--color-white) solid;
+  border-left: 1px var(--color-white) solid;
+  border-bottom: 1px var(--color-white) solid;
+  border-right: none;
+}
+
+@media (min-width: 950px) {
+  .hero {
+    background-image: url('../Images_Main/Contact_me.gif');
+    transform: rotate(-1deg);
+    background-repeat: repeat; 
+    background-size: 57% auto; 
+    background-position: -10px -10px;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  .formWrapper {
+    transform: rotate(1deg);
+  }
+  
+}

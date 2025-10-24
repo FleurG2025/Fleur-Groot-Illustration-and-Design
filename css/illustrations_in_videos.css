@@ -1,0 +1,50 @@
+/* -------------------- Mobile-first (default) ----------------------------- */
+.videoContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    align-items: start;
+    }
+iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    display: block;
+    border: none;
+  }
+
+.videoOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+.customPlayButton {
+    color: #2b91fe;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.7rem;
+    padding: .35rem 1.2rem .25rem 1.4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+  }
+  
+.customPlayButton:hover {
+outline: 1.5px solid var(--main-blue);
+}
+
+@media (min-width: 500px) {
+    
+    .videoOverlay, .videoContainer {
+    grid-column: span 12;
+    }
+    
+}
